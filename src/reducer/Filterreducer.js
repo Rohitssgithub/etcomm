@@ -1,3 +1,5 @@
+import { act } from "react-dom/test-utils";
+
 const filterReducer = (state, action) => {
     switch (action.type) {
         case "LOAD_FILTER_PRODUCTS":
@@ -25,6 +27,7 @@ const filterReducer = (state, action) => {
             };
 
         case "GET_SORT_VALUE":
+            console.log(action.payload)
             return {
                 ...state,
                 sorting_value: action.payload,
