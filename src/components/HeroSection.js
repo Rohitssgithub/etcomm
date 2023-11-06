@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 
 const HeroSection = (props) => {
-    const {name}=props
+    const { name } = props
     return (
         <>
             <div className="container  ">
