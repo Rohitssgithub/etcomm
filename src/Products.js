@@ -20,7 +20,6 @@ const Products = () => {
 
       </div>
 
-      <Footer></Footer>
     </>
   )
 };
