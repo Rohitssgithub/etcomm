@@ -9,7 +9,7 @@ import Myimage from "./components/Myimage";
 import FormatPrice from "./components/FormatPrice";
 import Star from "./components/Star"
 import AddToCart from "./components/AddToCart";
-
+import Loading from "./components/Loading/Loading";
 const API = "https://api.pujakaitem.com/api/products";
 
 const SingleProduct = () => {
@@ -33,13 +33,15 @@ const SingleProduct = () => {
     getSingleProduct(`${API}?id=${id}`)
   }, [])
 
-  if (isSingleLoading) {
-    return <div>Loading.....</div>;
-  }
+  // if (isSingleLoading) {
+  //   return <div>Loading.....</div>;
+  // }
 
 
   return (
     <>
+
+      {isSingleLoading && <Loading />}
 
       <PageNavigation title={name}></PageNavigation>
 
