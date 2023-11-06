@@ -9,15 +9,13 @@ const Myimage = ({ img = [{ url: " " }] }) => {
                 {
                     img.map((curElm, index) => {
                         return (
-                            // <figure> 
-                                <img
-                                    src={curElm.url}
-                                    alt={curElm.filename}
-                                    className="box-image-style"
-                                    key={index}
-                                    onClick={() => setMainImage(curElm)}
-                                />
-                            // </figure>
+                            <img
+                                src={curElm.url}
+                                alt={curElm.filename}
+                                className="box-image-style"
+                                key={index}
+                                onClick={() => setMainImage(curElm)}
+                            />
                         )
                     })
                 }

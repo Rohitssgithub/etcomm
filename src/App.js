@@ -19,7 +19,7 @@ import Footer from "./components/Footer";
 const App = () => {
 
   return (
-    <Router>
+    <Router>c
       <Navbar></Navbar>
       <Routes>
         <Route exact path="/" element={<Home></Home>}></Route>
