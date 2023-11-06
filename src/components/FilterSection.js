@@ -4,6 +4,8 @@ import { FaCheck } from "react-icons/fa";
 import Formatprice from "./FormatPrice"
 const FilterSection = () => {
   const { filters: { text, color, price, maxPrice, minPrice }, updateFilterValue, all_products, clearFilters } = useFilterContext()
+  console.log('maxPrice', maxPrice)
+  console.log('minPrice', minPrice)
 
   const getUniqueData = (prod, attr) => {
     let data = prod.map((ele) => {
