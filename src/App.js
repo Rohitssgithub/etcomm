@@ -13,6 +13,7 @@ import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
 import ErrorPage from "./ErrorPage";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route exact path="/cart" element={<Cart />}></Route>
         <Route exact path="*" element={<ErrorPage />}></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 };
