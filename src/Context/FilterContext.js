@@ -40,6 +40,8 @@ export const FilterContextProvider = ({ children }) => {
     const updateFilterValue = (event) => {
         let name = event.target.name;
         let value = event.target.value
+        console.log('name', name)
+        console.log('value', value)
         dispatch({ type: 'UPDATE_FILTER_VALUE', payload: { name, value } })
     }
     const clearFilters = () => {
