@@ -61,6 +61,7 @@ const filterReducer = (state, action) => {
             };
 
         case "UPDATE_FILTER_VALUE":
+            console.log('action.payload', action.payload)
             const { name, value } = action.payload
             return {
                 ...state,
@@ -108,6 +109,8 @@ const filterReducer = (state, action) => {
                 );
             }
 
+            console.log('tempFilterProduct', tempFilterProduct)
+
             return {
                 ...state,
                 filter_products: tempFilterProduct
@@ -122,9 +125,7 @@ const filterReducer = (state, action) => {
                     category: "all",
                     company: "all",
                     color: "all",
-                    // maxPrice: 0,
                     price: state.filters.maxPrice,
-                    // minPrice: state.filters.maxPrice,
                 },
             };
 
