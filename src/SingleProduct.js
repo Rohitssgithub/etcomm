@@ -33,10 +33,6 @@ const SingleProduct = () => {
     getSingleProduct(`${API}?id=${id}`)
   }, [])
 
-  // if (isSingleLoading) {
-  //   return <div>Loading.....</div>;
-  // }
-
 
   return (
     <>

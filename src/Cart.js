@@ -7,7 +7,8 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <div>
-        <h3>No Cart in Item </h3>
+        <h3>No item in cart </h3>
+        <img src='https://img.freepik.com/premium-vector/young-man-standing-with-shopping-cart-he-holding-paper-list-mall-supermarket_1150-51048.jpg?w=996'></img>
       </div>
     );
   }
