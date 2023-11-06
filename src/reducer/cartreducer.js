@@ -6,6 +6,7 @@ const cartReducer = (state, action) => {
         let existingProduct = state.cart.find((ele) => {
             return ele.id === id + color
         })
+        console.log('existingProduct', existingProduct)
         if (existingProduct) {
             let updateitem = state.cart.map((curele) => {
                 console.log(curele)
@@ -85,8 +86,9 @@ const cartReducer = (state, action) => {
     }
 
     if (action.type === "SET_INCREMENT") {
+        console.log('action.payload', action.payload)
         let updatedProduct = state.cart.map((curElem) => {
-            // console.log(curElem)
+            console.log(curElem)
             if (curElem.id === action.payload) {
                 let incAmount = curElem.amount + 1;
                 if (incAmount >= curElem.max) {
@@ -101,6 +103,7 @@ const cartReducer = (state, action) => {
                 return curElem;
             }
         });
+        console.log('updatedProduct', updatedProduct)
         return { ...state, cart: updatedProduct };
     }
 
@@ -111,7 +114,6 @@ const cartReducer = (state, action) => {
             let { amount, price } = curElem
             accum.total_item += amount;
             accum.total_price += amount * price;
-
             return accum
         }, {
             total_price: 0,

@@ -45,11 +45,9 @@ const SingleProduct = () => {
 
       <div className="container Single-product">
         <div className="row border border-dark justify-content-center">
-          {/* Product image  */}
           <div className="col-5 Single-product-images">
             <Myimage img={image}></Myimage>
           </div>
-          {/* product data */}
           <div className="col-5 product-data">
             <h3>{name}</h3>
             <Star stars={stars} reviews={reviews}></Star>

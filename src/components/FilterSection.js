@@ -9,12 +9,14 @@ const FilterSection = () => {
     let data = prod.map((ele) => {
       return ele[attr]
     })
+    console.log('data', data)
     if (attr === "colors") {
       // return (data = ["All", ...new Set([].concat(...data))]);
       data = data.flat();
     }
     return (data = ["all", ...new Set(data)]);
   }
+
 
   const categoryData = getUniqueData(all_products, 'category')
   const companyData = getUniqueData(all_products, 'company')

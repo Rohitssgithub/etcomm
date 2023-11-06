@@ -77,7 +77,7 @@ const filterReducer = (state, action) => {
             let tempFilterProduct = [...all_products];
 
             const { text, category, company, color, price } = state.filters;
-            console.log(price)
+            console.log(company)
             if (text) {
                 tempFilterProduct = tempFilterProduct.filter((curElem) => {
                     return curElem.name.toLowerCase().includes(text);

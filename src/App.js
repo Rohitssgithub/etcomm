@@ -12,8 +12,6 @@ import Contact from "./Contact";
 import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
 import ErrorPage from "./ErrorPage";
-// import { GlobalStyle } from "./GlobalStyle";
-// import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 
 

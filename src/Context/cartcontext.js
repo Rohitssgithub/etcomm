@@ -2,18 +2,9 @@ import React, { createContext, useContext, useEffect, useReducer } from "react";
 import reducer from "../reducer/cartreducer"
 
 const CartContext = createContext();
-const getLocalCartData = () => {
-    let localCartData = localStorage.getItem("thapaCart");
-    if (localCartData === []) {
-        return [];
-    } else {
-        return JSON.parse(localCartData);
-    }
-};
 
 const initialState = {
     cart: [],
-    // cart: getLocalCartData(),
     total_item: "",
     total_price: "",
     shipping_fee: 50000,

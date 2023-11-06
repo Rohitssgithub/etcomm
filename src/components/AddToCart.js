@@ -6,6 +6,7 @@ import { useCartContext } from "../Context/cartcontext";
 
 
 const AddToCart = ({ product }) => {
+    console.log('product', product)
     let { addProductToCart } = useCartContext()
 
     const { id, colors, stock } = product;
