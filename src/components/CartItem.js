@@ -11,6 +11,8 @@ const CartItem = ({ product }) => {
 
     let { id, name, image, color, price, amount } = product;
 
+    console.log('id', id)
+
     return (
         <>
             <img src={image} className='cart-image' alt="" />

@@ -99,7 +99,8 @@ const cartReducer = (state, action) => {
                     ...curElem,
                     amount: incAmount,
                 };
-            } else {
+            }
+            else {
                 return curElem;
             }
         });
