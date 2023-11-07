@@ -7,10 +7,10 @@ import CartAmoutToggle from './CartAmoutToggle';
 
 import FormatPrice from "../components/FormatPrice"
 const CartItem = ({ product }) => {
+    console.log('product', product)
     const { removeitem, setDecrese, setincrease, total_price, shipping_fee, clearCart } = useCartContext()
 
     let { id, name, image, color, price, amount } = product;
-
     console.log('id', id)
 
     return (

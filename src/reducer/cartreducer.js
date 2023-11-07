@@ -48,8 +48,6 @@ const cartReducer = (state, action) => {
     }
 
     if (action.type === "REMOVE_ITEM") {
-        console.log(state.cart)
-
         let updatedCart = state.cart.filter((ele) => {
             return ele.id !== action.payload
         })
@@ -59,7 +57,6 @@ const cartReducer = (state, action) => {
             ...state,
             cart: updatedCart
         }
-
     }
     if (action.type === "SET_DECREMENT") {
         let updatedProductamout = state.cart.map((curElem) => {
