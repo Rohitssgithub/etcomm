@@ -6,7 +6,7 @@ const cartReducer = (state, action) => {
         let existingProduct = state.cart.find((ele) => {
             return ele.id === id + color
         })
-        console.log('existingProduct', existingProduct)
+        // console.log('existingProduct', existingProduct)
         if (existingProduct) {
             let updateitem = state.cart.map((curele) => {
                 console.log(curele)
