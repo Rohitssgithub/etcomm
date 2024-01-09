@@ -4,6 +4,7 @@ const ProductReducer = (state, action) => {
             return {
                 ...state,
                 isLoading: true,
+                // lm,
             };
 
         case "SET_API_DATA":
